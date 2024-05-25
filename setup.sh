@@ -1,5 +1,5 @@
 # Install packages
-for pkg in git fzf zsh stow bat tmux xclip; do
+for pkg in git fzf zsh stow tmux xclip; do
 	if ! command -v $pkg > /dev/null; then
 		sudo apt-get install -yq $pkg
 	fi
