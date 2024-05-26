@@ -2,7 +2,7 @@
 	name = Marcelo Yáñez Araya
 	email = marcelo.araya1@mail.udp.cl
 [init]
-	defaulBranch = main
+	defaultBranch = main
 [core]
 	editor = nvim
 	pager = delta
