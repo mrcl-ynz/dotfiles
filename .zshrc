@@ -16,6 +16,10 @@ plugins=(
 	tmux
 )
 
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_CONFIG="$HOME/.config/tmux/tmux.conf"
+ZSH_TMUX_DEFAULT_SESSION_NAME="TMUX"
+
 source $ZSH/oh-my-zsh.sh
 
 export MANPATH="/usr/local/man:$MANPATH"
@@ -29,3 +33,4 @@ export EDITOR=nvim
 alias zshconfig="$EDITOR ~/.zshrc"
 alias f='cd "$(fd . $HOME --type d --maxdepth 1 | fzf)"'
 alias l='eza -laoB --icons=always --git-ignore --smart-group --git --no-permissions'
+alias la='eza -laoB --icons=always --smart-group --git --no-permissions'
