@@ -6,7 +6,7 @@ for pkg in git fzf zsh stow tmux xclip; do
 done
 
 # Install rust toolchain
-if ! command -v cargo > /dev/null; then
+if [ ! -d "$HOME/.cargo" ]; then
 	curl --proto '=https' --tlsv1.2 -sSf "https://sh.rustup.rs" |
 		sh -s -- -y && . "$HOME/.cargo/env"
 fi
@@ -28,8 +28,3 @@ if [ ! -d "$HOME/dotfiles" ]; then
 fi
 
 cd "$HOME/dotfiles" && stow .
-
-# Change shell to zsh
-if [ ! $SHELL = "/usr/bin/zsh" ]; then
-	chsh -s $(which zsh)
-fi
