@@ -31,6 +31,7 @@ export NVM_DIR="$HOME/.nvm"
 export EDITOR=nvim
 
 alias zshconfig="$EDITOR ~/.zshrc"
-alias f='cd "$(fd . $HOME --type d --maxdepth 1 | fzf)"'
+alias f='cd "$(fd . $HOME --type d --maxdepth 1 | fzf)"; clear'
+alias cat='batcat'
 alias l='eza -laoB --icons=always --git-ignore --smart-group --git --no-permissions'
 alias la='eza -laoB --icons=always --smart-group --git --no-permissions'
