@@ -14,6 +14,7 @@ plugins=(
 	git
 	colored-man-pages
 	tmux
+    aliases
 )
 
 ZSH_TMUX_AUTOSTART=true
