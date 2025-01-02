@@ -1,0 +1,22 @@
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+indent_style = space
+indent_size = 4
+
+[Makefile]
+indent_style = tab
+
+[*.sh]
+indent_style = tab
+indent_size = 4
+
+[*.{c,cpp,h}]
+indent_style = space
+indent_size = 2
+
+[*.{json,{ya,to,y}ml}]
+indent_style = space
+indent_size = 2
