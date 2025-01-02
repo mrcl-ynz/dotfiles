@@ -5,7 +5,10 @@ if [[ ! -d $ZSH ]]; then
 fi
 
 ZSH_THEME="robbyrussell"
-plugins=(git)
+plugins=(git tmux)
+
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_DEFAULT_SESSION_NAME="TMUX"
 
 source "$ZSH/oh-my-zsh.sh"
 
