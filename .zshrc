@@ -19,7 +19,7 @@ else
 fi
 
 fuzzy_find() {
-    local query=($HOME -maxdepth 1 -mindepth 1 -type d -not -path "$HOME/.*")
+  local query=($HOME -maxdepth 1 -mindepth 1 \( -type d -or -type l \) -not -path "$HOME/.*")
 
     local selected=$(find $query | fzf)
 
