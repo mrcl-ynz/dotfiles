@@ -3,3 +3,6 @@
 [user]
 	email = marcelo.yanez@mail.udp.cl
 	name = Marcelo Yáñez
+[core]
+	editor = nvim
+	pager = cat
