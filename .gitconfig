@@ -5,4 +5,11 @@
 	name = Marcelo Yáñez
 [core]
 	editor = nvim
-	pager = cat
+  pager = cat
+[diff]
+  tool = nvimdiff
+[difftool "nvimdiff"]
+  cmd = "nvim -d $LOCAL $REMOTE"
+[merge]
+  ff = no
+  commit = no
